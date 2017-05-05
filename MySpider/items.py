@@ -13,4 +13,11 @@ class MySpiderItem(Item):
     # name = scrapy.Field()
     title = Field()
     url = Field()
+    content = Field()
 
+
+class NewsItem(Item):
+    source = Field()
+    title = Field()
+    url = Field()
+    content = Field()

@@ -30,6 +30,6 @@ class MongoDBPipeline(object):
                 raise DropItem("Missing {0}!".format(data))
         if valid:
             self.collection.insert(dict(item))
-            log.msg("Question added to MongoDB database!",
+            log.msg("Tinhte's title added to MongoDB database!",
                     level=log.DEBUG, spider=spider)
         return item
